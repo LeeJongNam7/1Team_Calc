@@ -19,7 +19,12 @@ class Home extends StatelessWidget {
                 onPressed: (){
                   Navigator.pushNamed(context, '/add');
                 },
-                child: Icon(Icons.add)
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.lightBlue,
+                  foregroundColor: Colors.white
+                ),
+                child: const Icon(Icons.add)
+                
               ),
             ),
             Padding(
@@ -28,7 +33,11 @@ class Home extends StatelessWidget {
                 onPressed: (){
                   Navigator.pushNamed(context, '/sub');
                 },
-                child: Icon(Icons.remove)
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.red,
+                  foregroundColor: Colors.white
+                ),
+                child: const Icon(Icons.remove)
               ),
             ),
             Padding(
@@ -37,7 +46,11 @@ class Home extends StatelessWidget {
                 onPressed: (){
                   Navigator.pushNamed(context, '/mul');
                 },
-                child: Text("X")
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.lime,
+                  foregroundColor: Colors.white
+                ),
+                child: const Text("X")
               ),
             ),
             Padding(
@@ -46,7 +59,11 @@ class Home extends StatelessWidget {
                 onPressed: (){
                   Navigator.pushNamed(context, '/div');
                 },
-                child: Text("÷")
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.deepPurpleAccent,
+                  foregroundColor: Colors.white
+                ),
+                child: const Text("÷")
               ),
             ),
             Padding(
@@ -55,7 +72,12 @@ class Home extends StatelessWidget {
                 onPressed: (){
                   Navigator.pushNamed(context, '/squ');
                 },
-                child: Text("^")
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.teal,
+                  foregroundColor: Colors.white
+                  ), 
+              
+                child: const Text("^")
               ),
             ),
           ],
