@@ -22,12 +22,12 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       routes: {
-        '/' : (context)=> const Home(),
-        '/add' : (context)=> const Add(),
-        '/sub' : (context)=> const Sub(),
-        '/mul' : (context)=> const Mul(),
-        '/div' : (context)=> const Div(),
-        '/squ' : (context)=> const Squ(),
+        '/': (context) => const Home(),
+        '/add': (context) => const Add(),
+        '/sub': (context) => const Sub(),
+        '/mul': (context) => const Mul(),
+        '/div': (context) => const Div(),
+        '/squ': (context) => const Squ(),
       },
       initialRoute: '/',
     );

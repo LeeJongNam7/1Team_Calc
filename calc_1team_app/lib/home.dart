@@ -16,69 +16,57 @@ class Home extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: ElevatedButton(
-                onPressed: (){
-                  Navigator.pushNamed(context, '/add');
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.lightBlue,
-                  foregroundColor: Colors.white
-                ),
-                child: const Icon(Icons.add)
-                
-              ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/add');
+                  },
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.lightBlue,
+                      foregroundColor: Colors.white),
+                  child: const Icon(Icons.add)),
             ),
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: ElevatedButton(
-                onPressed: (){
-                  Navigator.pushNamed(context, '/sub');
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.red,
-                  foregroundColor: Colors.white
-                ),
-                child: const Icon(Icons.remove)
-              ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/sub');
+                  },
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.red,
+                      foregroundColor: Colors.white),
+                  child: const Icon(Icons.remove)),
             ),
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: ElevatedButton(
-                onPressed: (){
-                  Navigator.pushNamed(context, '/mul');
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.lime,
-                  foregroundColor: Colors.white
-                ),
-                child: const Text("X")
-              ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/mul');
+                  },
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.lime,
+                      foregroundColor: Colors.white),
+                  child: const Text("X")),
             ),
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: ElevatedButton(
-                onPressed: (){
-                  Navigator.pushNamed(context, '/div');
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.deepPurpleAccent,
-                  foregroundColor: Colors.white
-                ),
-                child: const Text("÷")
-              ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/div');
+                  },
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.deepPurpleAccent,
+                      foregroundColor: Colors.white),
+                  child: const Text("÷")),
             ),
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: ElevatedButton(
-                onPressed: (){
-                  Navigator.pushNamed(context, '/squ');
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.teal,
-                  foregroundColor: Colors.white
-                  ), 
-              
-                child: const Text("^")
-              ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/squ');
+                  },
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal,
+                      foregroundColor: Colors.white),
+                  child: const Text("^")),
             ),
           ],
         ),
