@@ -10,14 +10,13 @@ class Squ extends StatefulWidget {
 class _SquState extends State<Squ> {
 //Property
 late TextEditingController num1Controller;
-late TextEditingController clacSquare;
 
 @override
   void initState() {
     super.initState();
     num1Controller = TextEditingController();
-    clacSquare = TextEditingController();
   }
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -153,12 +152,11 @@ late TextEditingController clacSquare;
   }
 
   sqrAction(){
-    if( num1Controller.text.trim().isEmpty){
+    if(num1Controller.text.trim().isEmpty){
       errorSnackBar();
     }else{
-      clacSquare.text = (int.parse(num1Controller.text.trim()) * int.parse(num1Controller.text.trim())).toString();
+      num1Controller.text = (int.parse(num1Controller.text.trim()) * int.parse(num1Controller.text.trim())).toString();
     }
-    return clacSquare;
     setState(() {});
   }
 
